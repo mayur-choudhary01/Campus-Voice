@@ -1,0 +1,16 @@
+[package]
+name = "mayur/campus-voice"
+version = "0.1.0"
+description = "College Complaint Management System"
+
+[[module]]
+source = "wasmer/php"
+name = "php"
+
+[[command]]
+name = "php-server"
+module = "php"
+runner = "https://webc.org/packages/wasmer/php"
+
+[fs]
+base-directory = "."
